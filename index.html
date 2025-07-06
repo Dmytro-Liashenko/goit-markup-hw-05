@@ -540,14 +540,14 @@
         <div class="subcribe">
           <p class="subcribe-title">Subscribe</p>
           <form class="subcribe-form">
-            <input
-              class="subcribe-input"
-              type="email"
-              name="subcribe-email"
-              id="subcribe-email"
-              placeholder="E-mail"
-            />
-
+            <label class="subcribe-label">
+              <input
+                class="subcribe-input"
+                type="email"
+                name="subcribe-email"
+                placeholder="E-mail"
+              />
+            </label>
             <button type="submit" class="subcribe-btn">
               Subscribe
 
@@ -559,37 +559,38 @@
         </div>
       </div>
     </footer>
+
     <div class="model-overlay is-open" data-modal>
       <div class="model">
-        <div class="button-close-content">
-          <button
-            class="button-model-close"
-            type="button"
-            name="button-close"
-            data-modal-close
-          >
-            <svg width="8" height="8" class="button-close-svg">
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
+        <button
+          class="button-model-close"
+          type="button"
+          name="button-close"
+          data-modal-close
+        >
+          <svg width="8" height="8" class="button-close-svg">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
 
         <p class="model-text">Leave your contacts and we will call you back</p>
-        <div class="model-list">
-          <label for="user-name" class="comment">Name</label>
+        <form class="model-list">
           <div class="model-content">
-            <input
-              class="field-input"
-              type="text"
-              name="user-name"
-              id="user-name"
-              placeholder=""
-            />
-            <svg class="model-svg" width="18" height="24">
-              <use href="./images/icons.svg#icon-person"></use>
-            </svg>
+            <label for="user-name" class="comment">Name</label>
+            <div class="model-field">
+              <input
+                class="field-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+                placeholder=""
+              />
+              <svg class="model-svg" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
           </div>
-        </div>
+        </form>
         <div class="model-list">
           <label class="comment" for="user-tel">Phone</label>
           <div class="model-content">
